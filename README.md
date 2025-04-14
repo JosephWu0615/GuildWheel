@@ -32,23 +32,28 @@ This project simulates a mini Guidewheel-style system for monitoring machine per
 
 ```text
 GuildWheel/
-├── backend/           # Express backend with REST API
-│   └── src/
-│       ├── routes/
-│       │   ├── machines.ts
-│       │   └── metrics.ts
-│       └── index.ts
-├── frontend/          # Vue 3 dashboard UI
+├── backend/                      # Express backend with REST API
+│   ├── src/
+│   │   ├── routes/
+│   │   │   ├── machines.ts
+│   │   │   └── metrics.ts
+│   │   └── index.ts
+│   └── tests/                    # Vitest unit tests
+│       ├── machines.test.ts
+│       └── metrics.test.ts
+├── frontend/                     # Vue 3 dashboard UI
 │   └── src/
 │       └── components/
 │           ├── LineChart.vue
 │           └── MachineDashboard.vue
-├── k6/                # k6 performance test scripts
+├── k6/                           # k6 performance test scripts
 │   ├── load-machines.js
 │   ├── load-metrics.js
 │   ├── load-all.js
-│   └── lib/api.js
+│   └── lib/
+│       └── api.js
 └── README.md
+
 ```
 
 ---
