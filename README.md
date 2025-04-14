@@ -6,6 +6,8 @@ This project simulates a mini Guidewheel-style system for monitoring machine per
 - 📈 Real-time metrics visualization (heartbeat-style line charts)
 - 🚀 Performance/load testing with `k6`
 
+![image](https://github.com/user-attachments/assets/514dcf3f-cddc-4903-af8e-22366d3c9feb)
+
 ---
 
 ## 📦 Tech Stack
