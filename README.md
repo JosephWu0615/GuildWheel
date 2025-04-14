@@ -36,7 +36,7 @@ This project simulates a mini GuideWheel-style system for monitoring machine per
 ### 📁 Project Structure
 
 ```text
-GuildWheel/
+GuideWheel/
 ├── backend/                      # Express backend (TypeScript)
 │   ├── src/
 │   │   ├── routes/
