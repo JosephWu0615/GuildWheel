@@ -31,22 +31,28 @@ This project simulates a mini Guidewheel-style system for monitoring machine per
 ## 📁 Project Structure
 
 ```text
+### 📁 Project Structure
+
+```text
 GuildWheel/
-├── backend/                      # Express backend with REST API
+├── backend/                      # Express backend (TypeScript)
 │   ├── src/
 │   │   ├── routes/
 │   │   │   ├── machines.ts
 │   │   │   └── metrics.ts
 │   │   └── index.ts
-│   └── tests/                    # Vitest unit tests
-│       ├── machines.test.ts
-│       └── metrics.test.ts
+│   └── tests/
+│       ├── unit/
+│       │   ├── machines.test.ts
+│       │   └── metrics.test.ts
+│       └── integration/
+│           └── app.integration.test.ts
 ├── frontend/                     # Vue 3 dashboard UI
 │   └── src/
 │       └── components/
 │           ├── LineChart.vue
 │           └── MachineDashboard.vue
-├── k6/                           # k6 performance test scripts
+├── k6/                           # Performance test scripts (k6)
 │   ├── load-machines.js
 │   ├── load-metrics.js
 │   ├── load-all.js
@@ -125,8 +131,28 @@ k6 run k6/load-all.js
 
 ### 🧪 Testing
 🔹 Unit Tests (Vitest)
+
 ```bash
 cd backend
-npm run test
+npm run test:unit
 ```
 Test coverage includes route handlers for both machines and metrics.
+
+🔹 Integration Tests
+Simulate real API flows with database (machines + metrics).
+
+Located in: `backend/tests/integration/`
+
+```bash
+npm run test:integration
+```
+Test coverage includes route handlers for both machines and metrics.
+
+🔹 Performance Tests (k6)
+Run realistic API load simulations:
+
+```bash
+npm run test:perf              # Full workflow test
+npm run test:perf:machines     # Machines-only test
+npm run test:perf:metrics      # Metrics-only test
+```
