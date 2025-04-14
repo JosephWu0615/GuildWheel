@@ -1,6 +1,6 @@
-# 🏭 GuildWheel — Real-Time Factory Monitoring Demo
+# 🏭 GuideWheel — Real-Time Factory Monitoring Demo
 
-This project simulates a mini Guidewheel-style system for monitoring machine performance in real time using a power "heartbeat" stream. It features:
+This project simulates a mini GuideWheel-style system for monitoring machine performance in real time using a power "heartbeat" stream. It features:
 
 - 🔧 Machine management with CRUD APIs
 - 📈 Real-time metrics visualization (heartbeat-style line charts)
