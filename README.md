@@ -30,6 +30,7 @@ This project simulates a mini Guidewheel-style system for monitoring machine per
 
 ## 📁 Project Structure
 
+```text
 GuildWheel/
 ├── backend/           # Express backend with REST API
 │   └── src/
@@ -48,6 +49,7 @@ GuildWheel/
 │   ├── load-all.js
 │   └── lib/api.js
 └── README.md
+```
 
 ---
 
